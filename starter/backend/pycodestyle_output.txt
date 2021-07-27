@@ -1,0 +1,396 @@
+test_flaskr.py:18:77: E231 missing whitespace after ','
+        self.database_path = "postgres://{}:{}@{}/{}".format('caryn', '1234','localhost:5432', self.database_name)
+                                                                            ^
+    Each comma, semicolon or colon should be followed by whitespace.
+
+    Okay: [a, b]
+    Okay: (3,)
+    Okay: a[1:4]
+    Okay: a[:4]
+    Okay: a[1:]
+    Okay: a[1:4:2]
+    E231: ['a','b']
+    E231: foo(bar,baz)
+    E231: [{'a':'b'}]
+test_flaskr.py:18:80: E501 line too long (114 > 79 characters)
+        self.database_path = "postgres://{}:{}@{}/{}".format('caryn', '1234','localhost:5432', self.database_name)
+                                                                               ^
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to
+    have several windows side-by-side.  The default wrapping on such
+    devices looks ugly.  Therefore, please limit all lines to a maximum
+    of 79 characters. For flowing long blocks of text (docstrings or
+    comments), limiting the length to 72 characters is recommended.
+
+    Reports error E501.
+test_flaskr.py:27:1: W293 blank line contains whitespace
+
+^
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank,
+    for easier filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+test_flaskr.py:34:80: E501 line too long (91 > 79 characters)
+    Write at least one test for each test for successful operation and for expected errors.
+                                                                               ^
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to
+    have several windows side-by-side.  The default wrapping on such
+    devices looks ugly.  Therefore, please limit all lines to a maximum
+    of 79 characters. For flowing long blocks of text (docstrings or
+    comments), limiting the length to 72 characters is recommended.
+
+    Reports error E501.
+test_flaskr.py:36:5: E265 block comment should start with '# '
+    #test the paginate_questions definition
+    ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:38:46: E261 at least two spaces before inline comment
+        res = self.client().get('/questions') #resource is client getting the end point.
+                                             ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:38:47: E262 inline comment should start with '# '
+        res = self.client().get('/questions') #resource is client getting the end point.
+                                              ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:38:80: E501 line too long (88 > 79 characters)
+        res = self.client().get('/questions') #resource is client getting the end point.
+                                                                               ^
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to
+    have several windows side-by-side.  The default wrapping on such
+    devices looks ugly.  Therefore, please limit all lines to a maximum
+    of 79 characters. For flowing long blocks of text (docstrings or
+    comments), limiting the length to 72 characters is recommended.
+
+    Reports error E501.
+test_flaskr.py:41:47: E261 at least two spaces before inline comment
+        self.assertEqual(res.status_code, 200) # this is a successful result
+                                              ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:47:5: E265 block comment should start with '# '
+    #test the get categories definition
+    ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:49:47: W291 trailing whitespace
+        res = self.client().get('/categories')
+                                              ^
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank,
+    for easier filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+test_flaskr.py:52:47: E261 at least two spaces before inline comment
+        self.assertEqual(res.status_code, 200) # this is a successful result
+                                              ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:57:5: E265 block comment should start with '# '
+    #test 404 error when requesting question page that doesn't exit
+    ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:60:80: W291 trailing whitespace
+        res = self.client().get('/questions?page=1000000', json={'rating': 12})
+                                                                               ^
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank,
+    for easier filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+test_flaskr.py:65:80: E501 line too long (87 > 79 characters)
+        self.assertEqual(data['message'], 'Resource not found, we searched everywhere')
+                                                                               ^
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to
+    have several windows side-by-side.  The default wrapping on such
+    devices looks ugly.  Therefore, please limit all lines to a maximum
+    of 79 characters. For flowing long blocks of text (docstrings or
+    comments), limiting the length to 72 characters is recommended.
+
+    Reports error E501.
+test_flaskr.py:67:5: E265 block comment should start with '# '
+    #test 404 error when deleting non-existent question
+    ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:75:80: E501 line too long (87 > 79 characters)
+        self.assertEqual(data['message'], 'Resource not found, we searched everywhere')
+                                                                               ^
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to
+    have several windows side-by-side.  The default wrapping on such
+    devices looks ugly.  Therefore, please limit all lines to a maximum
+    of 79 characters. For flowing long blocks of text (docstrings or
+    comments), limiting the length to 72 characters is recommended.
+
+    Reports error E501.
+test_flaskr.py:77:5: E265 block comment should start with '# '
+    #test 422 error when adding question, but leave field blank
+    ^
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.
+    Inline comments should be separated by at least two spaces from the
+    statement. They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+test_flaskr.py:92:80: E501 line too long (98 > 79 characters)
+        self.assertEqual(data['message'], 'I am being semantic this request can not be processed')
+                                                                               ^
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to
+    have several windows side-by-side.  The default wrapping on such
+    devices looks ugly.  Therefore, please limit all lines to a maximum
+    of 79 characters. For flowing long blocks of text (docstrings or
+    comments), limiting the length to 72 characters is recommended.
+
+    Reports error E501.
+test_flaskr.py:92:99: W291 trailing whitespace
+        self.assertEqual(data['message'], 'I am being semantic this request can not be processed')
+                                                                                                  ^
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank,
+    for easier filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+test_flaskr.py:94:1: W293 blank line contains whitespace
+
+^
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank,
+    for easier filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+test_flaskr.py:97:1: E303 too many blank lines (4)
+# Make the tests conveniently executable
+^
+    Separate top-level function and class definitions with two blank
+    lines.
+
+    Method definitions inside a class are separated by a single blank
+    line.
+
+    Extra blank lines may be used (sparingly) to separate groups of
+    related functions.  Blank lines may be omitted between a bunch of
+    related one-liners (e.g. a set of dummy implementations).
+
+    Use blank lines in functions, sparingly, to indicate logical
+    sections.
+
+    Okay: def a():\n    pass\n\n\ndef b():\n    pass
+    Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+    Okay: default = 1\nfoo = 1
+    Okay: classify = 1\nfoo = 1
+
+    E301: class Foo:\n    b = 0\n    def bar():\n        pass
+    E302: def a():\n    pass\n\ndef b(n):\n    pass
+    E302: def a():\n    pass\n\nasync def b(n):\n    pass
+    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+    E303: def a():\n\n\n\n    pass
+    E304: @decorator\n\ndef a():\n    pass
+    E305: def a():\n    pass\na()
+    E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+test_flaskr.py:98:1: E305 expected 2 blank lines after class or function definition, found 4
+if __name__ == "__main__":
+^
+    Separate top-level function and class definitions with two blank
+    lines.
+
+    Method definitions inside a class are separated by a single blank
+    line.
+
+    Extra blank lines may be used (sparingly) to separate groups of
+    related functions.  Blank lines may be omitted between a bunch of
+    related one-liners (e.g. a set of dummy implementations).
+
+    Use blank lines in functions, sparingly, to indicate logical
+    sections.
+
+    Okay: def a():\n    pass\n\n\ndef b():\n    pass
+    Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+    Okay: default = 1\nfoo = 1
+    Okay: classify = 1\nfoo = 1
+
+    E301: class Foo:\n    b = 0\n    def bar():\n        pass
+    E302: def a():\n    pass\n\ndef b(n):\n    pass
+    E302: def a():\n    pass\n\nasync def b(n):\n    pass
+    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+    E303: def a():\n\n\n\n    pass
+    E304: @decorator\n\ndef a():\n    pass
+    E305: def a():\n    pass\na()
+    E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+test_flaskr.py:99:20: W292 no newline at end of file
+    unittest.main()
+                   ^
+    Trailing blank lines are superfluous.
+
+    Okay: spam(1)
+    W391: spam(1)\n
+
+    However the last line should end with a new line (warning W292).
