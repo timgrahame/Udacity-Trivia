@@ -112,6 +112,7 @@ The application includes questions with an associated answer, a difficulty level
 	
 	* 400 - Bad Request Error
 	* 404 - Resource not Found Error
+	* 405 - Method Not Allowed
 	* 500 - Internal Server Error
 	* 422 - Unprocessable Error
 	
