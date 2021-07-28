@@ -245,6 +245,15 @@ def create_app(test_config=None):
           'message': 'Resource not found, we searched everywhere'
         }), 404
 
+    # Error handler for not allowed (405)
+    @app.errorhandler(405)
+    def not_allowed(error):
+        return jsonify({
+            'success': False,
+            'error': 405,
+            'message': 'You are not allowed to do this!'
+        }), 405
+
     # Error handler for internal server error (500)
     @app.errorhandler(500)
     def internal_server_error(error):
@@ -260,7 +269,7 @@ def create_app(test_config=None):
         return jsonify({
           'success': False,
           'error': 422,
-          'message': 'I am being semantic this request can not be processed'
+          'message': 'I am being semantic request can not be processed'
         }), 422
 
     return app
